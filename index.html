@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="titulo">To do List</h1>
+        </div>
+    </header>
+    <main>
+    <section class="container">
+        <h2>Tarefas</h2>
+        <table>
+            <thead class="table-title">
+                <th>Data</th>
+                <th>Tarefa</th>
+                <th>Horário</th>
+                <th>Detalhes</th>
+            </thead>
+            <tbody class="tabela js-todas-tarefas">
+                <tr class="table-item">
+                    <td class="info-data">25/05/2021</td>
+                    <td class="info-compromisso">Consulta </td>
+                    <td class="info-horario">10:00</td>
+                    <td class="info-detalhes"> documentos</td>            
+                </tr>
+
+                <tr class="table-item">
+                    <td class="info-data">25/05/2021</td>
+                    <td class="info-compromisso">Projetos</td>
+                    <td class="info-horario">8:00</td>
+                    <td class="info-detalhes">Projeto GitHub</td>            
+                </tr>      
+
+            </tbody>
+        </table>
+    </section>
+
+    <section class="container">
+        <h2 id="titulo-form">Adicionar tarefa</h2>
+        <form id="form-agendar">
+            <div class="time">
+                    <div class="data">
+                        <label for="data">Data</label>
+                        <input class="campo campo-medio" type="date" name="" id="data">
+                    </div>
+                   <div class="hora">
+                        <label for="hora">Horário</label>
+                        <input class="campo campo-medio" type="time" name="" id="hora">
+                   </div>
+            </div>
+            
+            <div class="grupo">
+                <label for="compromisso">Compromisso</label>
+                <input class="campo" type="text" name="" id="compromisso">
+            </div>
+
+        <div class="grupo">
+                <label for="detalhes">Detalhes</label>
+                <input class="campo" type="text" name="" id="detalhes">
+        </div>
+
+            <button class="btn" id="btn-salvar">Salvar</button>
+        </form>
+    </section>
+</main>
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/remove.js"></script>
+    <script src="assets/js/mostraTarefa.js"></script>
+    <script src="assets/js/botao-salvar.js"></script>
+</body>
+</html>

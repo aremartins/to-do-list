@@ -1,0 +1,191 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-color: #69688C;
+	height: 3em;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+h2{
+	font-size: 10px;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 94%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 1.5rem;
+	font-weight: 700;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+	
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    justify-content: space-between;
+    width: 30%;
+    padding: 10px 0px;
+}
+
+.time .data{
+    margin-right: .2rem;
+}
+
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#128B7D;
+	border-color: #0e7468;
+	width: 100%;
+  display: block;
+  clear: both;
+  margin: 10px 0px;
+
+}
+
+button:hover{
+	background-color: #04BF7B;
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+  background-color: gray;
+	border-color: darkgray;
+}
+
+.fadeOut {
+	opacity:0;
+	transition: 0.5s;
+}
+
+
+.invisivel {
+	display: none;
+}
+
+@media screen and(min-width: 640px) {
+
+	button {
+		display: block;
+		width:100px;
+		font-size: .50rem;
+		padding: .2rem .10rem;
+	}
+
+
+	body{
+		font-size: 12px;
+	}
+
+	
+	header h1{
+		font-size: .75rem;	
+	}
+
+	header h2{
+		font-size: .75rem;
+	}
+}
+
+@media only screen and (min-width : 1024px){
+	.container{
+		padding:0;
+		width: 60%;
+		height: 100%;
+	}
+
+}
+
+
